@@ -1,0 +1,375 @@
+.logo-icon {
+    width: 251px;
+    flex: 1;
+    position: relative;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .olvide-contrasea {
+    margin: 0;
+    height: 50px;
+    position: relative;
+    font-size: 34px;
+    font-weight: 800;
+    font-family: var(--font-heebo);
+    color: #000;
+    text-align: center;
+    display: inline-block;
+  }
+  .rectangle-logo {
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-11xl);
+  }
+  .label {
+    position: relative;
+    font-size: var(--components-helper-text-size);
+    letter-spacing: 0.15px;
+    line-height: 12px;
+    font-family: var(--typography-body-1);
+    color: var(--light-text-secondary);
+    text-align: left;
+  }
+  .content,
+  .label-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .label-container {
+    height: 13px;
+    background-color: var(--light-info-contrast);
+    display: flex;
+    align-items: center;
+    padding: 0 1px 0 var(--padding-9xs);
+  }
+  .content {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    height: 54px;
+    overflow: hidden;
+    flex-shrink: 0;
+    align-items: flex-start;
+    padding: var(--padding-mini) 0;
+    font-family: var(--typography-body-1);
+    font-size: var(--typography-body-1-size);
+    color: var(--color-gray-100);
+    min-width: 150px;
+  }
+  .content,
+  .helper-text,
+  .input1 {
+    align-self: stretch;
+    display: flex;
+  }
+  .input1 {
+    border-radius: var(--br-9xs);
+    border: 1px solid var(--light-other-outlined-border-23p);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-mini) 0 var(--padding-smi);
+  }
+  .helper-text {
+    flex: 1;
+    position: relative;
+    font-size: var(--components-helper-text-size);
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    font-family: var(--typography-body-1);
+    color: var(--light-text-secondary);
+    text-align: left;
+    align-items: center;
+  }
+  .helpertext,
+  .text-fieldoutlined {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .helpertext {
+    height: 20px;
+    padding: 0 var(--padding-sm);
+    box-sizing: border-box;
+  }
+  .text-fieldoutlined {
+    gap: var(--gap-10xs);
+  }
+  .label1 {
+    position: relative;
+    font-size: var(--components-helper-text-size);
+    letter-spacing: 0.15px;
+    line-height: 12px;
+    font-family: var(--typography-body-1);
+    color: var(--light-text-secondary);
+    text-align: left;
+  }
+  .content1,
+  .label-container1 {
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .label-container1 {
+    height: 2px;
+    background-color: var(--light-info-contrast);
+    display: flex;
+    align-items: center;
+    padding: 0 var(--padding-9xs);
+  }
+  .content1 {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    height: 54px;
+    overflow: hidden;
+    flex-shrink: 0;
+    align-items: flex-start;
+    padding: var(--padding-mini) 0;
+    font-family: var(--typography-body-1);
+    font-size: var(--typography-body-1-size);
+    color: var(--color-gray-100);
+    min-width: 150px;
+  }
+  .content1,
+  .helper-text1,
+  .input2 {
+    align-self: stretch;
+    display: flex;
+  }
+  .input2 {
+    border-radius: var(--br-9xs);
+    border: 1px solid var(--light-other-outlined-border-23p);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-mini) 0 var(--padding-smi);
+  }
+  .helper-text1 {
+    flex: 1;
+    position: relative;
+    font-size: var(--components-helper-text-size);
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    font-family: var(--typography-body-1);
+    color: var(--light-text-secondary);
+    text-align: left;
+    align-items: center;
+  }
+  .helpertext1 {
+    height: 20px;
+    padding: 0 var(--padding-sm);
+    box-sizing: border-box;
+  }
+  .helpertext1,
+  .input,
+  .text-fieldoutlined1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .text-fieldoutlined1 {
+    height: 72px;
+    gap: var(--gap-10xs);
+  }
+  .input {
+    gap: var(--gap-11xl);
+  }
+  .button {
+    position: relative;
+    font-size: var(--components-button-large-size);
+    letter-spacing: 0.46px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--typography-body-1);
+    color: var(--light-info-contrast);
+    text-align: left;
+  }
+  .buttoncontained,
+  .unstyledbutton {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8px 42px;
+  }
+  .buttoncontained {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: var(--light-primary-main);
+    align-self: stretch;
+    border-radius: var(--br-9xs);
+    box-shadow: var(--elevation-2);
+    align-items: center;
+    justify-content: center;
+  }
+  .record-mi-contrasea {
+    position: relative;
+    font-size: var(--typography-body-1-size);
+    letter-spacing: 0.15px;
+    line-height: 150%;
+    font-family: var(--typography-body-1);
+    color: var(--light-primary-main);
+    text-align: left;
+  }
+  .link {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .no-tengo-una {
+    position: relative;
+    font-size: 10px;
+    letter-spacing: 0.15px;
+    line-height: 150%;
+    font-family: var(--typography-body-1);
+    color: var(--light-primary-main);
+    text-align: left;
+  }
+  .btm,
+  .link1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .btm {
+    align-self: stretch;
+    align-items: center;
+    gap: 24px;
+  }
+  .input-container-frame,
+  .left-side {
+    display: flex;
+    justify-content: center;
+  }
+  .input-container-frame {
+    margin: 0;
+    height: 866px;
+    width: 278px;
+    overflow: hidden;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-21xl);
+  }
+  .left-side {
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: 455px;
+    max-width: 100%;
+  }
+  .blank-line,
+  .blank-line1,
+  .blank-line2,
+  .blank-line3,
+  .blank-line4,
+  .blank-line5,
+  .blank-line6,
+  .blank-line7,
+  .informacin-importante,
+  .por-favor-lea {
+    margin: 0;
+  }
+  .no-reutilcese-contraseas,
+  .no-revele-su,
+  .use-caracteres-alfanumricos {
+    margin-bottom: 0;
+  }
+  .no-revele-su-contrasea-a-nadi {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 32px;
+  }
+  .informacin-importante-por-container {
+    margin: 0;
+    height: 520px;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: -0.05em;
+    line-height: 38px;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+    max-width: 100%;
+  }
+  .log-in-4,
+  .typequest {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .typequest {
+    align-self: stretch;
+    background-color: var(--light-info-contrast);
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    text-align: left;
+    font-size: 24px;
+    color: #727272;
+    font-family: var(--font-arial);
+  }
+  .log-in-4 {
+    flex: 1;
+    border-radius: 5px;
+    border: 1px dashed #7b61ff;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: var(--padding-xl);
+  }
+  .login-frame {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 750px) {
+    .olvide-contrasea {
+      font-size: 27px;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .left-side {
+      min-width: 100%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .olvide-contrasea {
+      font-size: 20px;
+    }
+    .unstyledbutton {
+      padding-left: var(--padding-xl);
+      padding-right: var(--padding-xl);
+      box-sizing: border-box;
+    }
+    .input-container-frame {
+      gap: var(--gap-21xl);
+    }
+    .informacin-importante-por-container {
+      font-size: 19px;
+      line-height: 30px;
+    }
+  }
