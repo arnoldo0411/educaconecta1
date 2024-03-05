@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-arial: Arial;
+    --typography-body-1: Roboto;
+    --font-heebo: Heebo;
+  
+    /* font sizes */
+    --typography-body-1-size: 16px;
+    --components-button-large-size: 15px;
+    --components-helper-text-size: 12px;
+  
+    /* Colors */
+    --light-info-contrast: #fff;
+    --light-primary-main: #1976d2;
+    --color-gray-100: rgba(0, 0, 0, 0.87);
+    --light-other-outlined-border-23p: rgba(0, 0, 0, 0.23);
+    --light-text-secondary: rgba(0, 0, 0, 0.6);
+  
+    /* Gaps */
+    --gap-21xl: 40px;
+    --gap-11xl: 30px;
+    --gap-10xs: 3px;
+  
+    /* Paddings */
+    --padding-xl: 20px;
+    --padding-sm: 14px;
+    --padding-mini: 15px;
+    --padding-smi: 13px;
+    --padding-9xs: 4px;
+  
+    /* Border radiuses */
+    --br-9xs: 4px;
+  
+    /* Effects */
+    --elevation-2: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+      0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+  }
+
+  .popup {
+    position: fixed;
+    background-color: #fff;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.success {
+    color: green;
+    border-color: green;
+}
+
+.error {
+    color: red;
+    border-color: red;
+}
