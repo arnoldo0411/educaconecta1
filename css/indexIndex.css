@@ -1,0 +1,316 @@
+/*Logo*/
+.e {
+  height: 40px;
+  position: relative;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+/*Posicion del Logo*/
+.rectangle-parent {
+  position: absolute;
+  top: 75px;
+  left: 55px;
+  flex-direction: row;
+  padding: var(--padding-6xs) 20px var(--padding-6xs) 21px;
+  z-index: 1;
+  text-align: center;
+}
+
+/*Hace el boton del logo bonis*/
+.boton-transparente {
+  background-color: transparent; /* Fondo transparente */
+  border: 0px solid #fff; /* Borde blanco de 2 píxeles */
+  color: #fff; /* Texto blanco */
+  padding: 5px 20px; /* Relleno del botón */
+  font-size: 10px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/*Hace el boton bonis*/
+.boton-transparente-educonecta {
+  background-color: transparent; /* Fondo transparente */
+  border: 0px solid #fff; /* Borde blanco de 2 píxeles */
+  color: #fff; /* Texto blanco */
+  padding: 15px 20px; /* Relleno del botón */
+  font-size: 30px; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/*Posicion del educonecta*/
+.educonecta {
+  position: absolute;
+  top: 91px;
+  left: 142px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+/*Inicio en la barra lateral*/
+.inicio,
+.cursos,
+.mensajes {
+  height: 27px;
+  position: relative;
+  font-weight: 500;
+  z-index: 3;
+}
+
+/*curso en blanco*/
+.cursos {
+  color: var(--color-black);
+}
+
+/*Acomoda los iconos alado de las palabras inicio y cursos*/
+.apps-2-line-1-icon,
+.graph-bar-1-icon,
+.chat-3-line-1-1{
+  position: absolute;
+  top: 80px;
+  left: 24px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  z-index: 3;
+}
+
+/*Acomoda el icono al lado de cursos*/
+.graph-bar-1-icon {
+  top: 
+  168px;
+}
+
+/*Pone el icono al lado del mensaje*/
+.chat-3-line-1-1 {
+  position: absolute;
+  top: 260px;
+}
+
+/*Hace todo el frame en donde esta la barra lateral*/
+.courses-frame {
+  position: absolute;
+  top: 219px;
+  left: 38px;
+  width: 344px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 69px 72px var(--padding-5xs);
+  box-sizing: border-box;
+  gap: 33px;
+  font-size: var(--font-size-lg);
+  color: #000000;
+}
+
+.inicio, .cursos, .mensajes {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.inicio:hover, .cursos:hover, .mensajes:hover, .graph-bar-1-icon:hover {
+  background-color: #fff;
+}
+
+/*Barra para la seleccion de el inicio*/
+.inicio::after{
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  width: 318px; /* Ancho de la barra blanca */
+  height: 60px; /* Altura de la barra blanca */
+  background-color: #fff;
+  display: none;
+  z-index: -1; /* Para asegurarse de que esté detrás del contenido */
+
+  border-top-right-radius: -100px; /* Redondea el borde superior derecho hacia afuera */
+  border-bottom-right-radius: -100px; /* Redondea el borde inferior derecho hacia afuera */  
+  
+  border-top-left-radius: 50px; /* Deja el borde superior izquierdo sin redondear (0 significa ningún redondeo) */
+  border-bottom-left-radius: 50px; /* Deja el borde inferior izquierdo sin redondear (0 significa ningún redondeo) */
+}
+
+/*Barra para la seleccion de cursos*/
+.cursos::after{
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  width: 335px; /* Ancho de la barra blanca */
+  height: 60px; /* Altura de la barra blanca */
+  background-color: #fff;
+  display: none;
+  z-index: -1; /* Para asegurarse de que esté detrás del contenido */
+
+  border-top-right-radius: -100px; /* Redondea el borde superior derecho hacia afuera */
+  border-bottom-right-radius: -100px; /* Redondea el borde inferior derecho hacia afuera */  
+  
+  border-top-left-radius: 50px; /* Deja el borde superior izquierdo sin redondear (0 significa ningún redondeo) */
+  border-bottom-left-radius: 50px; /* Deja el borde inferior izquierdo sin redondear (0 significa ningún redondeo) */
+}
+
+/*Barra para la seleccion de mensajes*/
+.mensajes::after{
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -50%;
+  right: 0;
+  bottom: 0;
+  width: 400px; /* Ancho de la barra blanca */
+  height: 60px; /* Altura de la barra blanca */
+  background-color: #000000;
+  display: none;
+  z-index: -1; /* Para asegurarse de que esté detrás del contenido */
+
+  border-top-right-radius: -100px; /* Redondea el borde superior derecho hacia afuera */
+  border-bottom-right-radius: -100px; /* Redondea el borde inferior derecho hacia afuera */  
+  
+  border-top-left-radius: 50px; /* Deja el borde superior izquierdo sin redondear (0 significa ningún redondeo) */
+  border-bottom-left-radius: 50px; /* Deja el borde inferior izquierdo sin redondear (0 significa ningún redondeo) */
+}
+
+.inicio:hover::after, .cursos:hover::after, .mensajes:hover::after {
+  display: block;
+}
+
+/*Pone la barra de busqueda y los iconos de cuneta y crear curso arriba del main frame*/
+.course-frame-child {
+  width: 1056px;
+  height: 976px;
+  position: relative;
+  border-radius: var(--br-29xl);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 48px rgba(0, 0, 0, 0.02);
+  display: none;
+}
+
+/*Pone el buscador de manera bonita jajajaja*/
+.buscar {
+  width: 1100px;
+  border: 0;
+  outline: 0;
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  background-color: transparent;
+  color: #b3b6b6;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+/*Pone el frame gris de la barra de busqueda*/
+.search-button {
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: #f6f6f5;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 18px 28px;
+  box-sizing: border-box;
+  gap: 20px;
+  min-width: 88px;
+  z-index: 2;
+}
+
+/*Si mueves esto el boton de usuario se baja (No lo muevas)*/
+.tus-cursos-sin-acabar-text {
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Alinea la barra de busqueda con el boton de cuenta y el de crear curso*/
+.search-frame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 76px;
+}
+
+/*Extiende la barra de busqueda, el boton de cuenta y el de crear curso a todo el main frame*/
+.user-frame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xs);
+  gap: 56px;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-gray);
+  font-family: var(--font-poppins);
+}
+
+/*Coloca el mensaje de "Mensajes sin leer a la izquierda del main frame"*/
+.unread-messages {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-5xs);
+}
+
+/*Le da el font y tamaño a el mensaje de "Mensajes sin leer a la izquierda del main frame"*/
+.course-frame,
+.desktop-32 {
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  font-family: var(--font-poppins);
+}
+
+/*Crea el main frame*/
+.course-frame {
+  position: absolute;
+  top: 24px;
+  left: 360px;
+  right: 100px;
+  border-radius: var(--br-29xl);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 48px rgba(0, 0, 0, 0.02);
+  width: 1518px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-41xl) var(--padding-41xl) 242px;
+  box-sizing: border-box;
+  gap: 474px;
+  z-index: 1;
+  color: var(--color-gray);
+}
+
+/*Crea el fondo morado debajo de todo*/
+.desktop-32 {
+  width: 100%;
+  height: 1024px;
+  position: relative;
+  background-color: var(--color-darkslateblue);
+  overflow: hidden;
+  color: var(--color-white);
+}
+
+
+#my-svg {
+  width: 100vw; /* Establece el ancho al 100% del ancho de la ventana del navegador */
+  height: auto; /* Mantiene la proporción de aspecto */
+}
