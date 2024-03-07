@@ -56,24 +56,49 @@ include("iniciosesion.php");
                                     <div class="helper-text"></div>
                                 </div>
                             </div>
+
+                            <script>
+                                document.getElementById("username").addEventListener("input", function(event) {
+                                    var input = event.target;
+                                    input.value = input.value.toLowerCase();
+                                });
+                            </script>
+
+
                             <!-- Campo de texto con etiqueta para la contraseña -->
                             <div class="text-fieldoutlined">
                                 <div class="input3">
                                     <div class="label-container">
                                         <div class="label1">Contraseña</div>
                                     </div>
-                                    <input class="content2" name="password" placeholder="Contraseña" type="password" required/>
+                                    <div class="password-container">
+                                        <input class="content2" name="password" placeholder="Contraseña" type="password" required />
+                                        <span class="show-password" id="togglePassword">Mostrar</span>
+                                    </div>
                                 </div>
                                 <div class="helpertext2">
                                     <div class="helper-text2"></div>
                                 </div>
                             </div>
+
+                            <script>
+                                const passwordField = document.querySelector('.content2');
+                                const togglePasswordBtn = document.getElementById('togglePassword');
+
+                                togglePasswordBtn.addEventListener('click', function() {
+                                    passwordField.type = passwordField.type === 'password' ? 'text' : 'password';
+                                    togglePasswordBtn.textContent = passwordField.type === 'password' ? 'Mostrar' : 'Ocultar';
+                                });
+                            </script>
+
+
+
                         </div>
                         <!-- Contenedor de botones y enlaces con la clase "btm" -->
                         <div class="btm">
                             <!-- Botón de inicio de sesión con enlace -->
                             <div class="Boton-Log-In">
-                                <input class="fcc-btn" type="submit" name="btnEnviar" value="Iniciar Sesión">
+                                <input class="fcc-btn" type="submit" name="btnEnviar" value="Log In">
                             </div>
 
                         <!-- Enlace para cerrar sesión -->
@@ -84,11 +109,11 @@ include("iniciosesion.php");
             <?php endif; ?>
                             <!-- Enlace para restablecer contraseña -->
                             <div class="link1">
-                                <a href="../OlvideContra/OlvideContrasena.php" title="OlvideContrasena">Olvidé la contraseña</a>
+                                <a href="../OlvideContra/OlvideContrasena.php" title="OlvideContrasena">Olvidé mi contraseña</a>
                             </div>
                             <!-- Enlace para registrarse -->
                             <div class="link1">
-                                <a href="../Signup/SignUp.php" title="SignUp">No tengo cuenta</a>
+                                <a href="../Signup/SignUp.php" title="SignUp">No tengo una cuenta</a>
                             </div>
                         </div>
                     </form>
@@ -99,23 +124,21 @@ include("iniciosesion.php");
         </div>
     </div>
 
-   <!-- Bloquear retroceso después de iniciar sesión -->
-   <?php if(isset($_SESSION['nombre'])): ?>
+    <?php if(isset($_SESSION['nombre'])): ?>
         <script>
             window.onload = function() {
                 if (typeof window.history.pushState === "function") {
-                    window.history.pushState("noForward", "", null);
-                    window.history.forward();
+                    window.history.pushState("noBack", "", null);
                     window.onpopstate = function(event) {
-                        window.history.pushState("noForward", "", null);
+                        window.history.pushState("noBack", "", null);
                         alert("Por favor, inicia sesión primero.");
+                        while(true) {
+                            window.location.href = document.referrer; // Redirigir a la página anterior
+                        }
                     };
                 }
             };
         </script>
     <?php endif; ?>
-
-
 </body>
-
 </html>
