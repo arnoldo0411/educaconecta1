@@ -51,7 +51,7 @@
                                     <div class="label-container">
                                         <div class="label">Nombre de usuario</div>
                                     </div>
-                                    <input class="content" placeholder="Username" id = "username" type="text" name="name" required>
+                                    <input class="content" placeholder="Username" id="username" type="text" name="name" required>
                                 </div>
                                 <div class="helpertext">
                                     <div class="helper-text"></div>
@@ -60,14 +60,18 @@
 
                             <script>
                                 document.getElementById('username').addEventListener('input', function() {
-                                var invalidChars = /[^a-zA-Z0-9]/g;
-                                if (this.value.match(invalidChars)) {
-                                    this.setCustomValidity('El nombre de usuario solo puede contener letras y números.');
-                                } else {
-                                    this.setCustomValidity('');
-                                }
+                                    // Convertir el valor del nombre de usuario a minúsculas
+                                    this.value = this.value.toLowerCase();
+
+                                    var invalidChars = /[^a-zA-Z0-9]/g;
+                                    if (this.value.match(invalidChars)) {
+                                        this.setCustomValidity('El nombre de usuario solo puede contener letras y números.');
+                                    } else {
+                                        this.setCustomValidity('');
+                                    }
                                 });
                             </script>
+
 
                             <div class="text-fieldoutlined">
                                 <div class="input3">
@@ -149,8 +153,10 @@
                                     <div class="label-container">
                                         <div class="label2">Password</div>
                                     </div>
-                                    <input class="content2" id="passwordField" placeholder="Password" type="password" name="password" required>
-                                    <button type="button" id="togglePassword">Mostrar</button>
+                                    <div class="password-container">
+                                        <input class="content2" id="passwordField" placeholder="Password" type="password" name="password" required />
+                                        <span class="show-password" id="togglePassword">Mostrar</span>
+                                    </div>
                                 </div>
                                 <div class="helpertext2">
                                     <div class="helper-text2"></div>
@@ -159,17 +165,16 @@
                             <script>
                                 const passwordField = document.getElementById('passwordField');
                                 const togglePasswordBtn = document.getElementById('togglePassword');
+
                                 togglePasswordBtn.addEventListener('click', function() {
                                     passwordField.type = passwordField.type === 'password' ? 'text' : 'password';
                                     togglePasswordBtn.textContent = passwordField.type === 'password' ? 'Mostrar' : 'Ocultar';
                                 });
                             </script>
                         </div>
+                        
                         <div class="Boton-Log-In">
-                            <input class="fcc-btn" type="submit" name="register" value="Registrarme">
-                        </div>
-                        <div class="link">
-                            <a href="../OlvideContra/OlvideContrasena.php" title="Olvidé la contraseña">Olvidé la contraseña</a>
+                            <input class="fcc-btn" type="submit" name="register" value="Sign Up">
                         </div>
                         <div class="link2">
                             <a href="../Login/LogIn.php" title="Ya tengo cuenta">Ya tengo cuenta</a>
