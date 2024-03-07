@@ -35,30 +35,70 @@
               </div>
 
                 <div class="input">
-                <div class="text-fieldoutlined">
-                <div class="input1">
-                    <div class="label-container">
-                        <div class="label">Nombre de usuario</div>
+                  <div class="text-fieldoutlined">
+                    <div class="input1">
+                        <div class="label-container">
+                            <div class="label">Nombre de usuario</div>
+                        </div>
+                        <input class="content" placeholder="Nombre Usuario" type="text" id="nombre_usuario" name="nombre" pattern="[a-zA-Z0-9]+" title="El nombre de usuario solo puede contener letras y números" required />
                     </div>
-                    <input class="content" placeholder="Nombre Usuario" type="text" name="nombre" pattern="[a-zA-Z0-9]+" title="El nombre de usuario solo puede contener letras y números" required />
-                </div>
-                <div class="helpertext">
-                    <div class="helper-text"></div>
-                </div>
-                </div>
+                    <div class="helpertext">
+                        <div class="helper-text"></div>
+                    </div>
+                  </div>
+                  <script>
+                    document.getElementById('nombre_usuario').addEventListener('input', function() {
+                        // Convertir el valor del nombre de usuario a minúsculas
+                        this.value = this.value.toLowerCase();
+                    });
+                  </script>
 
                 <div class="text-fieldoutlined">
-                  <div class="input2">
-                    <div class="label-container">
-                      <div class="label1">Contraseña</div>
+                    <div class="input2">
+                        <div class="label-container">
+                            <div class="label1">Contraseña</div>
+                        </div>
+                        <div class="password-container">
+                            <input class="content1" placeholder="Contraseña" type="password" name="password" required />
+                            <span class="show-password" id="togglePassword">Mostrar</span>
+                        </div>
                     </div>
-                    <input class="content1" placeholder="Contraseña" type="password" name = "password" required />
-                  </div>
-                  <div class="helpertext1">
-                    <div class="helper-text1"></div>
-                  </div>
+                    <div class="helpertext1">
+                        <div class="helper-text1"></div>
+                    </div>
                 </div>
+
+                <style>
+                    .password-container {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .password-container .content1 {
+                        flex: 1;
+                        width: calc(100% - 90px);
+                    }
+
+                    .password-container #togglePassword {
+                        margin-left: 10px; /* Ajusta el margen a tu gusto */
+                        font-size: 0.6em; /* Tamaño de fuente más pequeño */
+                        color: black; /* Color del texto */
+                        cursor: pointer;
+                    }
+                </style>
+
+                <script>
+                    const passwordField = document.querySelector('.content1');
+                    const togglePasswordBtn = document.getElementById('togglePassword');
+
+                    togglePasswordBtn.addEventListener('click', function() {
+                        passwordField.type = passwordField.type === 'password' ? 'text' : 'password';
+                        togglePasswordBtn.textContent = passwordField.type === 'password' ? 'Mostrar' : 'Ocultar';
+                    });
+                </script>
               </div>
+              
               <div class="btm">
                 <button class="buttoncontained" name="update_password" type="submit">
                   <div class="unstyledbutton">
@@ -70,9 +110,6 @@
                   href="../Login/LogIn.php" 
                   title="LogIn">Recorde mi contraseña
                   </a>
-                </div>
-                <div class="link">
-                  <a href="../Signup/SignUp.php" title="SignUp">No tengo cuenta</a>
                 </div>
               </div>
             </form>
