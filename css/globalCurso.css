@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --button-l: Inter;
+    --font-poppins: Poppins;
+    --font-open-sans: "Open Sans";
+    --font-heebo: Heebo;
+    --typography-body-1: Roboto;
+  
+    /* font sizes */
+    --button-l-size: 18px;
+    --body-medium-400-size: 14px;
+    --body-large-500-size: 16px;
+    --heading-04-size: 24px;
+    --font-size-lgi: 19px;
+    --body-small-500-size: 12px;
+    --font-size-9xl: 28px;
+    --font-size-2xs: 11px;
+    --font-size-xl: 20px;
+    --font-size-mini: 15px;
+    --font-size-3xl: 22px;
+  
+    /* Colors */
+    --gray-white: #fff;
+    --primary-500: #ff6636;
+    --gray-50: #f5f7fa;
+    --color-whitesmoke: #f6f6f5;
+    --color-whitesmoke-100: #f1f1ef;
+    --gray-100: #e9eaf0;
+    --gray-600: #6e7485;
+    --gray-700: #4e5566;
+    --primary-100: #ffeee8;
+    --color-mistyrose: #e6d4cf;
+    --gray-900: #1d2026;
+    --color-gray: #181b1a;
+    --color-gray-300: rgba(255, 255, 255, 0.12);
+    --color-gray-400: rgba(255, 255, 255, 0.15);
+    --light-action-hover-4p: rgba(0, 0, 0, 0.04);
+    --color-gray-100: rgba(0, 0, 0, 0.87);
+    --color-gray-200: rgba(0, 0, 0, 0.6);
+    --success-500: #23bd33;
+    --color-darkslateblue: #503e9d;
+    --color-coral: #fb6d3a;
+    --color-slateblue: #6553b3;
+    --color-silver: #b3b6b6;
+    --color-black: #000;
+    --color-lightgreen: #64cf6f;
+    --color-dodgerblue: #1976d2;
+    --color-mediumslateblue: #7b61ff;
+    --gray-500: #8c94a3;
+  
+    /* Gaps */
+    --gap-xl: 20px;
+    --gap-xs: 12px;
+    --gap-6xs: 7px;
+    --gap-5xs: 8px;
+    --gap-base: 16px;
+    --gap-5xl: 24px;
+    --gap-21xl: 40px;
+    --gap-41xl: 60px;
+    --gap-9xs: 4px;
+    --gap-61xl: 80px;
+    --gap-10xs: 3px;
+    --gap-3xs: 10px;
+    --gap-smi: 13px;
+    --gap-7xs: 6px;
+    --gap-9xl: 28px;
+    --gap-4xl: 23px;
+    --gap-11xs: 2px;
+    --gap-7xs-5: 5.5px;
+    --gap-8xs: 5px;
+  
+    /* Paddings */
+    --padding-20xl: 39px;
+    --padding-15xl: 34px;
+    --padding-21xl: 40px;
+    --padding-13xl: 32px;
+    --padding-12xl: 31px;
+    --padding-6xl: 25px;
+    --padding-8xs: 5px;
+    --padding-lg: 18px;
+    --padding-4xl: 23px;
+    --padding-smi: 13px;
+    --padding-5xs-5: 7.5px;
+    --padding-base: 16px;
+    --padding-5xl: 24px;
+    --padding-12xs: 1px;
+    --padding-xl: 20px;
+    --padding-9xs: 4px;
+    --padding-4xs: 9px;
+    --padding-6xs: 7px;
+    --padding-5xs: 8px;
+    --padding-3xl: 22px;
+    --padding-lgi: 19px;
+    --padding-2xs: 11px;
+    --padding-mid: 17px;
+    --padding-10xs: 3px;
+    --padding-xs: 12px;
+    --padding-11xs: 2px;
+    --padding-7xs: 6px;
+    --padding-33xl: 52px;
+    --padding-41xl: 60px;
+  
+    /* Border radiuses */
+    --br-5xl: 24px;
+    --br-3xs: 10px;
+    --br-29xl: 48px;
+    --br-base: 16px;
+    --br-xl: 20px;
+    --br-11xs: 2px;
+    --br-21xl: 40px;
+    --br-9xs: 4px;
+    --br-45xl: 64px;
+    --br-8xs: 5px;
+  
+    /* Effects */
+    --dropdown: 0px 6px 16px rgba(0, 0, 0, 0.06);
+    --line-bottom: 0px -1px 0px #e9eaf0 inset;
+  }
+  
+  /* Estilos para alinear los elementos */
+  .curso-container {
+    float: left; /* Alinear los cursos a la izquierda */
+    width: 25%; /* Establecer el ancho de la lista de cursos */
+    padding: var(--padding-base); /* Agregar espacio alrededor de la lista de cursos */
+    border-right: 1px solid var(--color-gray); /* Agregar borde derecho */
+    background-color: white; /* Establecer color de fondo */
+    box-sizing: border-box; /* Incluir borde en el ancho total */
+    height: 25vw; /* Hacer que el div tenga la misma altura que el ancho */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical si es necesario */
+    border-radius: 12px;
+    font-size: 22px;
+    color: black;
+}
+
+
+#curso-contenido {
+    float: left; /* Alinear el contenido a la izquierda */
+    width: 75%; /* Establecer el ancho del contenido */
+    padding: var(--padding-base); /* Agregar espacio alrededor del contenido */
+    background-color: var(--gray-white); /* Establecer color de fondo */
+    box-sizing: border-box; /* Incluir borde en el ancho total */
+    height: 100vh; /* Hacer que el div ocupe toda la altura de la pantalla */
+    overflow-y: auto; /* Agregar barra de desplazamiento vertical si es necesario */
+    color: black !important;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.curso-container ul {
+    list-style-type: none; /* Quitar viñetas de la lista de cursos */
+    padding: 0;
+}
+
+.curso-container ul li {
+    margin-bottom: var(--gap-xs); /* Agregar espacio entre los elementos de la lista */
+}
+
+.curso-container ul li a {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    color: var(--color-black); /* Establecer color del texto de los enlaces */
+}
+
+/* Estilo para el botón "Inicio" */
+.boton-inicio,
+.mostrar-preg,
+.boton-enviar {
+    margin: var(--gap-base); /* Agregar margen alrededor del botón */
+    padding: var(--padding-base); /* Agregar espacio alrededor del botón */
+    background-color: var(--color-mediumslateblue); /* Establecer color de fondo */
+    color: var(--gray-white); /* Establecer color del texto */
+    border: none; /* Quitar borde */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    border-radius: 12px; /* Establecer borde redondeado */
+    font-weight: bold; /* Hacer que las letras sean más gruesas */
+}
+
+.boton-eliminar {
+  position: absolute; /* Establecer posición absoluta */
+  bottom: 25px; /* Desde abajo */
+  right: 45px; /* Desde la derecha */
+  padding: var(--padding-base); /* Espacio alrededor del botón */
+  background-color: red; /* Color de fondo rojo */
+  margin: var(--gap-base); /* Agregar margen */
+  border: none; /* Sin borde */
+  color: var(--gray-white); /* Color de texto blanco */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cursor de puntero */
+  border-radius: 12px; /* Bordes redondeados */
+}
+
+
+.search-frame{
+    color: #503e9d;
+}
+
+.e{
+    heigth: 95px;
+    top: 15px;
+    font-weigth: 900;
+    display: flex;
+    align-items: center;
+    z-index:2;
+}
