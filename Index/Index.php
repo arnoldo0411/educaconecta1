@@ -21,6 +21,12 @@ if (isset($_SESSION["autenticado"]) && $_SESSION["autenticado"] === true) {
     <link rel="stylesheet" href="../css/globalIndex.css" />
     <link rel="stylesheet" href="../css/indexIndex.css" />
 
+    <style>
+        h3 {
+            color: #503e9d; /* Establece el color del texto como morado */
+        }
+    </style>
+
     <!-- Hoja de estilo externa para fuentes desde Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" />
 </head>
@@ -53,16 +59,9 @@ if (isset($_SESSION["autenticado"]) && $_SESSION["autenticado"] === true) {
 
         <!-- Contenedor para diversas secciones como "Inicio," "Cursos," y "Mensajes" -->
         <div class="courses-frame">
-            <div class="inicio">Inicio</div>
-            <div class="cursos">Cursos</div>
-            <div class="cursos">Mensajes</div>
-            <div class="cursos"><a href="../Login/cerrarsesion.php">Cerrar Sesión</a></div>
-            <!-- Contenedor con imágenes relacionadas con aplicaciones, gráficos de líneas y chat -->
-            <div class="apps-line-graph-bar">
-                <img class="apps-2-line-1-icon" loading="eager" alt="" src="../public/apps2line-1.svg" />
-                <img class="graph-bar-1-icon" loading="eager" alt="" src="../public/graphbar-1.svg" />
-                <img class="chat-3-line-1-1" loading="eager" alt="" src="../public/chat3line-1-1.svg" />
-            </div>
+            <div class = "cursos"><a href="../Cursos/crearCurso.php" class="Curso" style="color: black;">Crear Curso</a></div>
+            <div class = "cursos"><a href="../Cursos/curso.php" class="Curso" style="color: black;">Cursos</a></div>
+            <div class = "cursos"><a href="../Login/cerrarsesion.php" class="Curso" style="color: black;">Cerrar Sesión</a></div>
         </div>
 
         <!-- Área principal de contenido con un div hijo dentro de "course-frame" -->
@@ -71,33 +70,20 @@ if (isset($_SESSION["autenticado"]) && $_SESSION["autenticado"] === true) {
 
             <!-- Sección para información relacionada con el usuario con una barra de búsqueda -->
             <section class="user-frame">
-                <div class="search-frame">
-
-                    <!-- Botón de búsqueda con una imagen y un campo de entrada -->
-                    <div class="search-button">
-                        <img class="search-3-1" alt="" src="../public/search-3-1.svg" />
-                        <input class="buscar" placeholder="Buscar.." type="text" />
-                    </div>
-
-                    <!-- Contenedor para texto e imágenes relacionadas con el usuario -->
-                    <div class="tus-cursos-sin-acabar-text">
-                        <img class="user-1-1" loading="eager" alt="" src="../public/user-1-1.svg" />
-                        <img class="tus-cursos-sin-acabar-text-child" loading="eager" alt="" src="../public/frame-1.svg" />
-                    </div>
-                </div>
+                
 
                 <!-- Texto que indica cursos sin terminar -->
-                <div class="tus-cursos-sin-acabar">Tus cursos sin acabar</div>
+                <div class="tus-cursos-sin-acabar"><h3>¿Por qué creamos esta página?</h3>
+                    <h6> 
+                            Promover la igualdad de acceso a la educación de calidad del país mediante el diseño y el <br>
+                            desarrollo de software de una página web para eficientar el soporte educativo.
+                    </h6>
+                </div>
             </section>
-
-            <!-- Contenedor para mostrar mensajes no leídos -->
-            <div class="unread-messages">
-                <div class="mensajes-sin-leer">Mensajes sin leer</div>
-            </div>
-
            
         </main>
     </div>
 </body>
 
 </html>
+
