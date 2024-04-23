@@ -1,0 +1,1269 @@
+.desktop-2-child {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 1024px;
+    right: -1440px;
+    bottom: -1024px;
+    left: 1440px;
+    background-color: var(--color-darkslateblue);
+    transform: rotate(-180deg);
+    transform-origin: 0 0;
+  }
+  .cog-1-1,
+  .frame-child23 {
+    position: relative;
+    display: none;
+  }
+  .cog-1-1 {
+    height: 24px;
+    width: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 3;
+  }
+  .frame-child23 {
+    height: 56px;
+    width: 56px;
+    border-radius: var(--br-base);
+    background-color: var(--color-slateblue);
+  }
+  .e1 {
+    margin: 0;
+    width: 15px;
+    position: relative;
+    font-size: inherit;
+    font-weight: 600;
+    font-family: inherit;
+    display: inline-block;
+    min-width: 15px;
+    z-index: 1;
+  }
+  .group-div {
+    border-radius: var(--br-base);
+    background-color: var(--color-slateblue);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-6xs) var(--padding-xl) var(--padding-6xs) 21px;
+    z-index: 1;
+  }
+  .apps-2-line-1-icon1,
+  .chat-3-line-1-11,
+  .graph-bar-1-icon1 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .lesson-container {
+    align-self: stretch;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .curso-container,
+  .desktop-2-inner,
+  .frame-parent3,
+  .lesson-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .curso-container {
+    flex: 1;
+    flex-direction: row;
+    padding: 0 var(--padding-base);
+  }
+  .desktop-2-inner,
+  .frame-parent3 {
+    flex-direction: column;
+  }
+  .frame-parent3 {
+    flex: 1;
+    gap: 150px;
+  }
+  .desktop-2-inner {
+    height: 410px;
+    padding: var(--padding-41xl) 0 0;
+    box-sizing: border-box;
+  }
+  .frame-child24,
+  .play-fill-button-child {
+    position: relative;
+    display: none;
+    max-width: 100%;
+  }
+  .play-fill-button-child {
+    width: 1236px;
+    height: 976px;
+    border-radius: var(--br-29xl);
+    background-color: var(--gray-white);
+    box-shadow: 0 4px 48px rgba(0, 0, 0, 0.02);
+  }
+  .frame-child24 {
+    height: 60px;
+    width: 900px;
+    border-radius: var(--br-xl);
+    background-color: var(--color-whitesmoke);
+  }
+  .buscar1,
+  .search-3-11 {
+    height: 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .search-3-11 {
+    width: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+  }
+  .buscar1 {
+    width: 68px;
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    font-family: var(--font-poppins);
+    font-size: var(--body-large-500-size);
+    background-color: transparent;
+    color: var(--color-silver);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .rectangle-parent1 {
+    flex: 1;
+    border-radius: var(--br-xl);
+    background-color: var(--color-whitesmoke);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-lg) 28px;
+    box-sizing: border-box;
+    gap: var(--gap-xl);
+    min-width: 92px;
+    max-width: 100%;
+    z-index: 2;
+  }
+  .user-1-11 {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  .bell-school-icon {
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-base) 0 0;
+    box-sizing: border-box;
+  }
+  .frame-child25 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    border-radius: var(--br-xl);
+    background-color: var(--color-coral);
+    display: none;
+  }
+  .bell-school-1-icon {
+    height: 28px;
+    width: 28px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .group-button {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-base) 14px var(--padding-base) var(--padding-lg);
+    background-color: var(--color-coral);
+    align-self: stretch;
+    border-radius: var(--br-xl);
+    justify-content: flex-start;
+    z-index: 2;
+  }
+  .frame-parent4,
+  .group-button,
+  .user-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .user-image {
+    height: 60px;
+    width: 120px;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .frame-parent4 {
+    align-self: stretch;
+    justify-content: flex-start;
+    gap: var(--gap-61xl);
+    max-width: 100%;
+  }
+  .curso-aprende-a {
+    display: inline-block;
+    max-width: 100%;
+  }
+  .curso-aprende-a,
+  .lecciones {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 500;
+    font-family: inherit;
+    z-index: 2;
+  }
+  
+  .lecciones{
+    padding-left: 1115px;
+  }
+  
+  .curso-aprende-a-hacer-algo-parent {
+    width: 959px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: var(--gap-xl);
+  }
+  .hdfill-or-volumeupfill {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 52px;
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--font-size-9xl);
+    color: var(--color-gray);
+    font-family: var(--font-poppins);
+  }
+  .mask-group-icon9 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .frame-child26 {
+    height: 36px;
+    width: 684px;
+    position: relative;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gray-400);
+    backdrop-filter: blur(120px);
+    display: none;
+    max-width: 100%;
+  }
+  .play-fill-1-1,
+  .x {
+    position: relative;
+    z-index: 1;
+  }
+  .play-fill-1-1 {
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 20px;
+  }
+  .x {
+    font-weight: 600;
+    display: inline-block;
+    min-width: 22px;
+  }
+  .aprende-otra-cosa-label,
+  .lesson-minimize-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-12xs) 0 0;
+  }
+  .aprende-otra-cosa-label {
+    height: 20px;
+    flex-direction: row;
+    padding: 0 var(--padding-9xs) 0 0;
+    box-sizing: border-box;
+    gap: 11px;
+  }
+  .aprende-otra-cosa-button-child,
+  .thumbs-up-label-child {
+    position: relative;
+    border-radius: var(--br-8xs);
+    backdrop-filter: blur(120px);
+    display: none;
+  }
+  .aprende-otra-cosa-button-child {
+    align-self: stretch;
+    width: 467px;
+    background-color: var(--color-gray-300);
+    max-width: 100%;
+  }
+  .thumbs-up-label-child {
+    height: 20px;
+    width: 203px;
+    background-color: var(--color-coral);
+  }
+  .thumbs-up-button {
+    position: relative;
+    line-height: 16px;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 94px;
+    z-index: 3;
+  }
+  .aprende-otra-cosa-button,
+  .min-button,
+  .thumbs-up-label {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .thumbs-up-label {
+    width: 203px;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-coral);
+    backdrop-filter: blur(120px);
+    flex-direction: row;
+    padding: var(--padding-10xs) var(--padding-4xs) var(--padding-11xs);
+    box-sizing: border-box;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .aprende-otra-cosa-button,
+  .min-button {
+    max-width: 100%;
+  }
+  .aprende-otra-cosa-button {
+    align-self: stretch;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-gray-300);
+    backdrop-filter: blur(120px);
+    flex-direction: row;
+    z-index: 1;
+  }
+  .min-button {
+    flex: 1;
+    flex-direction: column;
+    padding: 0 var(--padding-9xs) 0 0;
+    box-sizing: border-box;
+    min-width: 306px;
+    font-size: 10px;
+    color: 
+  }
+  .hd-fill-1-icon,
+  .volume-up-fill-1-icon {
+    position: absolute;
+    top: 0;
+    left: 36px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .volume-up-fill-1-icon {
+    left: 0;
+  }
+  .fullscreen-line-1-icon,
+  .thumbs-down-label {
+    height: 20px;
+    width: 56px;
+    position: relative;
+  }
+  .fullscreen-line-1-icon {
+    width: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 20px;
+    z-index: 1;
+  }
+  .mask-group-group,
+  .rectangle-parent2 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .rectangle-parent2 {
+    border-radius: var(--br-3xs);
+    background-color: var(--color-gray-400);
+    backdrop-filter: blur(120px);
+    align-items: flex-start;
+    padding: var(--padding-5xs) var(--padding-base);
+    gap: var(--gap-base);
+    z-index: 1;
+  }
+  .mask-group-group {
+    align-items: flex-end;
+    padding: 36px 48px;
+    position: relative;
+    min-width: 507px;
+    min-height: 420px;
+    z-index: 2;
+  }
+  .frame-child27 {
+    height: 56px;
+    width: 56px;
+    position: relative;
+    min-height: 56px;
+    z-index: 2;
+  }
+  .aprende-algo,
+  .lesson-4 {
+    font-weight: 500;
+    display: inline-block;
+  }
+  .aprende-algo {
+    position: relative;
+    min-width: 124px;
+    z-index: 2;
+  }
+  .lesson-4 {
+    min-width: 61px;
+  }
+  .div20,
+  .lesson-4,
+  .min2 {
+    position: relative;
+    z-index: 2;
+  }
+  .div20 {
+    font-weight: 100;
+    display: inline-block;
+    min-width: 4px;
+  }
+  .min2 {
+    height: 21px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-width: 41px;
+  }
+  .lesson-4-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-7xs-5);
+    font-size: var(--body-medium-400-size);
+    color: var(--color-silver);
+  }
+  .aprende-algo-parent {
+    flex-direction: column;
+    gap: var(--gap-11xs);
+  }
+  .aprende-algo-parent,
+  .frame-parent6,
+  .frame-wrapper1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-wrapper1 {
+    flex-direction: column;
+    padding: var(--padding-10xs) 0 0;
+  }
+  .frame-parent6 {
+    flex: 1;
+    flex-direction: row;
+    gap: var(--gap-xl);
+  }
+  .frame-child28 {
+    height: 1px;
+    width: 205px;
+    position: relative;
+    border-top: 1px solid var(--color-whitesmoke-100);
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .line-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .frame-child29 {
+    display: none;
+  }
+  .frame-child29,
+  .rectangle-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-base);
+    background-color: var(--color-coral);
+    width: 100%;
+    height: 100%;
+  }
+  .table-1-icon {
+    position: absolute;
+    height: 42.86%;
+    width: 42.86%;
+    top: 28.57%;
+    right: 28.57%;
+    bottom: 28.57%;
+    left: 28.57%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .frame-parent8 {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    height: 56px;
+    width: 56px;
+    position: relative;
+    z-index: 2;
+  }
+  .aprende-otra-cosa {
+    font-weight: 500;
+  }
+  .aprende-otra-cosa,
+  .div21,
+  .lesson-5 {
+    position: relative;
+    z-index: 2;
+  }
+  .lesson-5 {
+    height: 21px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-width: 61px;
+  }
+  .div21 {
+    font-weight: 100;
+    display: inline-block;
+    min-width: 4px;
+  }
+  .lesson-5-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-8xs);
+  }
+  .min3 {
+    height: 21px;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-width: 44px;
+    z-index: 2;
+  }
+  .frame-parent9 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-8xs);
+    font-size: var(--body-medium-400-size);
+    color: var(--color-silver);
+  }
+  .aprende-otra-cosa-parent {
+    flex-direction: column;
+    gap: var(--gap-11xs);
+  }
+  .aprende-otra-cosa-parent,
+  .en-teste-curso-learn-to-make-t,
+  .frame-parent7 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .en-teste-curso-learn-to-make-t {
+    flex-direction: column;
+    padding: var(--padding-10xs) 0 0;
+  }
+  .frame-parent7 {
+    flex-direction: row;
+    gap: var(--gap-xl);
+  }
+  .frame-child30 {
+    height: 1px;
+    width: 205px;
+    position: relative;
+    border-top: 1px solid var(--color-whitesmoke-100);
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .line-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .frame-child31 {
+    height: 56px;
+    width: 56px;
+    position: relative;
+    min-height: 56px;
+    z-index: 2;
+  }
+  .aprende-algo-mas {
+    font-weight: 500;
+  }
+  .aprende-algo-mas,
+  .div22,
+  .lesson-6 {
+    position: relative;
+    z-index: 2;
+  }
+  .lesson-6 {
+    height: 21px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-width: 61px;
+  }
+  .div22 {
+    font-weight: 100;
+    display: inline-block;
+    min-width: 4px;
+  }
+  .lesson-6-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-8xs);
+  }
+  .min4 {
+    height: 21px;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-width: 45px;
+    z-index: 2;
+  }
+  .frame-parent11 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-8xs);
+    font-size: var(--body-medium-400-size);
+    color: var(--color-silver);
+  }
+  .aprende-algo-mas-parent {
+    flex-direction: column;
+    gap: var(--gap-11xs);
+  }
+  .aprende-algo-mas-parent,
+  .frame-parent10,
+  .frame-wrapper2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-wrapper2 {
+    flex-direction: column;
+    padding: var(--padding-10xs) 0 0;
+  }
+  .frame-parent10 {
+    height: 56px;
+    flex-direction: row;
+    gap: var(--gap-xl);
+  }
+  .frame-child32 {
+    height: 1px;
+    width: 205px;
+    position: relative;
+    border-top: 1px solid var(--color-whitesmoke-100);
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .line-frame {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .frame-child33 {
+    display: none;
+  }
+  .frame-child33,
+  .rectangle-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-base);
+    background-color: var(--color-coral);
+    width: 100%;
+    height: 100%;
+  }
+  .pen-1-icon {
+    position: absolute;
+    height: 42.86%;
+    width: 42.86%;
+    top: 28.57%;
+    right: 28.57%;
+    bottom: 28.57%;
+    left: 28.57%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .frame-parent13 {
+    height: 56px;
+    width: 56px;
+    position: relative;
+    z-index: 2;
+  }
+  .aprende-aun-mas {
+    font-weight: 500;
+  }
+  .aprende-aun-mas,
+  .div23,
+  .lesson-7,
+  .min5 {
+    position: relative;
+    z-index: 2;
+  }
+  .lesson-7 {
+    height: 21px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-width: 60px;
+  }
+  .div23,
+  .min5 {
+    font-weight: 100;
+    display: inline-block;
+    min-width: 4px;
+  }
+  .min5 {
+    font-weight: 500;
+    min-width: 40px;
+  }
+  .lesson-7-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-7xs-5);
+    font-size: var(--body-medium-400-size);
+    color: var(--color-silver);
+  }
+  .aprende-aun-mas-parent {
+    flex-direction: column;
+    gap: var(--gap-11xs);
+  }
+  .aprende-aun-mas-parent,
+  .frame-parent12,
+  .frame-wrapper3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-wrapper3 {
+    flex-direction: column;
+    padding: var(--padding-10xs) 0 0;
+  }
+  .frame-parent12 {
+    flex-direction: row;
+    gap: var(--gap-xl);
+  }
+  .frame-child34 {
+    height: 1px;
+    width: 205px;
+    position: relative;
+    border-top: 1px solid var(--color-whitesmoke-100);
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .line-wrapper1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  .frame-child35 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-base);
+    background-color: var(--color-coral);
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .database-1-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .rectangle-parent3 {
+    height: 56px;
+    width: 56px;
+    position: relative;
+    border-radius: var(--br-base);
+    background-color: var(--color-coral);
+    z-index: 2;
+  }
+  .sigue-aprendiendo {
+    position: relative;
+    font-weight: 500;
+    z-index: 2;
+  }
+  .lesson-8 {
+    font-weight: 500;
+    display: inline-block;
+    min-width: 61px;
+  }
+  .div24,
+  .lesson-8,
+  .min6 {
+    position: relative;
+    z-index: 2;
+  }
+  .div24 {
+    font-weight: 100;
+    display: inline-block;
+    min-width: 4px;
+  }
+  .min6 {
+    height: 21px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-width: 44px;
+  }
+  .frame-wrapper4,
+  .lesson-8-parent,
+  .sigue-aprendiendo-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .lesson-8-parent {
+    flex-direction: row;
+    gap: var(--gap-7xs-5);
+    font-size: var(--body-medium-400-size);
+    color: var(--color-silver);
+  }
+  .frame-wrapper4,
+  .sigue-aprendiendo-parent {
+    flex-direction: column;
+  }
+  .sigue-aprendiendo-parent {
+    gap: var(--gap-11xs);
+  }
+  .frame-wrapper4 {
+    padding: var(--padding-10xs) 0 0;
+  }
+  .frame-parent14 {
+    flex-direction: row;
+    gap: var(--gap-xl);
+  }
+  .frame-parent14,
+  .frame-parent5,
+  .play-button1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .frame-parent5 {
+    height: 408px;
+    width: 280px;
+    flex-direction: column;
+    gap: 15.5px;
+    min-width: 280px;
+    font-size: var(--button-l-size);
+    color: var(--color-gray);
+  }
+  .play-button1 {
+    align-self: stretch;
+    flex-direction: row;
+    gap: var(--gap-21xl);
+    max-width: 100%;
+  }
+  .frame-child36 {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    z-index: 2;
+  }
+  .frame-wrapper6 {
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-12xs) 0 0;
+    box-sizing: border-box;
+  }
+  .aprendiendo-cositas {
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  .aprendiendo-cositas,
+  .magalychavez1 {
+    position: relative;
+    font-weight: 500;
+    z-index: 2;
+  }
+  .frame-child37 {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    z-index: 2;
+  }
+  .frame-wrapper7 {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-9xs) 0 0;
+    box-sizing: border-box;
+  }
+  .magalychavez-parent {
+    flex-direction: row;
+    gap: var(--gap-6xs);
+    font-size: var(--body-large-500-size);
+    color: var(--color-silver);
+  }
+  .aprendiendo-cositas-parent,
+  .frame-parent19,
+  .magalychavez-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .aprendiendo-cositas-parent {
+    flex: 1;
+    flex-direction: column;
+    gap: var(--gap-11xs);
+    min-width: 163px;
+  }
+  .frame-parent19 {
+    width: 327px;
+    flex-direction: row;
+    gap: var(--gap-base);
+    max-width: 100%;
+  }
+  .div25,
+  .thumbs-up-1-icon {
+    position: relative;
+    z-index: 2;
+  }
+  .thumbs-up-1-icon {
+    height: 24px;
+    width: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .div25 {
+    font-weight: 500;
+    display: inline-block;
+    min-width: 27px;
+  }
+  .container,
+  .thumbs-up-1-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .container {
+    flex-direction: column;
+    padding: var(--padding-12xs) 0 0;
+  }
+  .thumbs-up-1-parent {
+    align-self: stretch;
+    flex-direction: row;
+    gap: var(--gap-6xs);
+  }
+  .thumbs-down-1-icon {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    min-height: 24px;
+    z-index: 2;
+  }
+  .div26 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    min-width: 11px;
+    z-index: 2;
+  }
+  .thumbs-down-1-parent {
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-6xs);
+    color: ;
+  }
+  .share-alt-1-icon {
+    height: 24px;
+    width: 24px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 2;
+  }
+  .frame-parent20 {
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+    font-size: var(--body-large-500-size);
+    color: ;
+  }
+  .frame-parent18 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: var(--gap-xl);
+  }
+  .frame-child38 {
+    align-self: stretch;
+    height: 1px;
+    position: relative;
+    border-top: 1px solid var(--color-whitesmoke-100);
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .frame-parent17 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xl);
+    max-width: 100%;
+  }
+  .en-este-curso {
+    width: 620px;
+    position: relative;
+    font-size: var(--body-medium-400-size);
+    line-height: 22px;
+    display: inline-block;
+    max-width: 100%;
+    z-index: 2;
+  }
+  .frame-parent16,
+  .frame-wrapper5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .frame-parent16 {
+    align-self: stretch;
+    gap: var(--gap-4xl);
+  }
+  .frame-wrapper5 {
+    width: 780px;
+    padding: var(--padding-8xs) 0 0;
+    box-sizing: border-box;
+  }
+  
+  .frame-child39 {
+    height: 218px;
+    width: 128px;
+    position:sticky;
+    padding-left: 700px;
+    z-index: 2;
+  }
+  
+  .frame-parent15 {
+    width: 1037px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: var(--gap-xl);
+    font-size: var(--heading-04-size);
+    color: var(--color-gray);
+  }
+  .desktop-2,
+  .play-button-parent,
+  .play-fill-button {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .play-button-parent {
+    align-self: stretch;
+    flex-direction: column;
+    gap: var(--gap-4xl);
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--body-small-500-size);
+    color: rgba(255, 255, 255, 0.3);
+    font-family: var(--font-poppins);
+  }
+  .desktop-2,
+  .play-fill-button {
+    box-sizing: border-box;
+  }
+  .play-fill-button {
+    flex: 1;
+    border-radius: var(--br-29xl);
+    background-color: var(--gray-white);
+    box-shadow: 0 4px 48px rgba(0, 0, 0, 0.02);
+    flex-direction: column;
+    padding: var(--padding-41xl) 68px 73px;
+    gap: var(--gap-9xl);
+    min-width: 803px;
+    max-width: 100%;
+    z-index: 1;
+  }
+  .desktop-2 {
+    width: 100%;
+    position: relative;
+    background-color: #503e9d;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: var(--padding-5xl) var(--padding-5xl) var(--padding-5xl) 62px;
+    gap: 62px;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: var(--font-size-9xl);
+    color: var(--gray-white);
+    font-family: var(--font-poppins);
+  }
+  @media screen and (max-width: 1200px) {
+    .frame-parent4 {
+      gap: 80px 40px;
+    }
+    .frame-parent15 {
+      flex-wrap: wrap;
+    }
+    .play-fill-button {
+      padding-left: var(--padding-15xl);
+      padding-right: var(--padding-15xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .frame-parent4 {
+      flex-wrap: wrap;
+    }
+    .mask-group-group {
+      padding-left: var(--padding-5xl);
+      padding-right: var(--padding-5xl);
+      box-sizing: border-box;
+      min-width: 100%;
+    }
+    .frame-parent5 {
+      flex: 1;
+    }
+    .play-button1 {
+      flex-wrap: wrap;
+    }
+    .play-fill-button {
+      padding-top: var(--padding-20xl);
+      padding-bottom: 47px;
+      box-sizing: border-box;
+      min-width: 100%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .frame-parent4 {
+      gap: 80px 20px;
+    }
+    .curso-aprende-a-hacer-algo-parent {
+      flex-wrap: wrap;
+    }
+    .hdfill-or-volumeupfill {
+      gap: 26px 52px;
+    }
+    .rectangle-parent2 {
+      flex-wrap: wrap;
+    }
+    .play-button1 {
+      gap: 40px 20px;
+    }
+    .frame-parent18 {
+      flex-wrap: wrap;
+    }
+    .play-fill-button {
+      padding-top: var(--padding-6xl);
+      padding-bottom: var(--padding-12xl);
+      box-sizing: border-box;
+    }
+    .desktop-2 {
+      gap: 31px;
+      padding-left: var(--padding-12xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .e1 {
+      font-size: var(--font-size-3xl);
+    }
+    .desktop-2-inner {
+      padding-top: var(--padding-20xl);
+      box-sizing: border-box;
+    }
+    .curso-aprende-a,
+    .lecciones {
+      font-size: var(--font-size-3xl);
+    }
+    .aprendiendo-cositas {
+      font-size: var(--font-size-lgi);
+    }
+    .frame-parent19 {
+      flex-wrap: wrap;
+    }
+    .desktop-2 {
+      gap: 15px;
+    }
+  }
+  
