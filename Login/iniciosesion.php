@@ -7,6 +7,12 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+// Inicializamos banderas para verificar si se deben mostrar mensajes de error
+$usuario_correcto = false;
+$contraseña_correcta = false;
+$mostrar_mensaje_usuario_incorrecto = false;
+$mostrar_mensaje_contraseña_incorrecta = false;
+
 if (!empty($_POST["login"])) {
     if (!empty($_POST["username"]) && !empty($_POST["password"])) {
         $usuario = $_POST["username"];
@@ -16,28 +22,43 @@ if (!empty($_POST["login"])) {
         $usuario = strtolower($usuario);
 
         // Lógica para verificar las credenciales en la base de datos
-        $stmt = $link->prepare("SELECT * FROM usuarios WHERE BINARY NombreUs = ? AND Contraseña = ?");
-        $stmt->bind_param("ss", $usuario, $clave);
+        $stmt = $link->prepare("SELECT * FROM usuarios WHERE BINARY NombreUs = ?");
+        $stmt->bind_param("s", $usuario);
         $stmt->execute();
         $result = $stmt->get_result();
 
         if ($result->num_rows > 0) {
-            // Iniciar sesión y establecer la variable de sesión
-            $_SESSION['nombre'] = $usuario;
-            
-            // Redirigir al usuario a la página principal después de iniciar sesión
-            header("Location: ../Index/Index.php");
-            exit(); // Terminar el script
+            $usuarioData = $result->fetch_assoc();
+            // Verificar si la contraseña coincide
+            if ($clave === $usuarioData['Contraseña']) {
+                // Ambos usuario y contraseña son correctos
+                $usuario_correcto = true;
+                $contraseña_correcta = true;
+                
+                // Iniciar sesión y redirigir al usuario al index
+                $_SESSION['nombre'] = $usuario;
+                header("Location: ../Index/Index.php");
+                exit(); // Terminar el script
+            } else {
+                // Solo la contraseña es incorrecta
+                $mostrar_mensaje_contraseña_incorrecta = true;
+            }
         } else {
-            // Mostrar mensaje de acceso denegado si las credenciales son incorrectas
-            $message = "¡ACCESO DENEGADO!, INTENTE DE NUEVO.";
-            echo '<script>showMessage("' . $message . '");</script>';
+            // El usuario no existe en la base de datos
+            $mostrar_mensaje_usuario_incorrecto = true;
         }
-    } else {
-        // Mostrar mensaje si el usuario no ingresó un nombre de usuario o contraseña
-        $message = "Por favor ingrese usuario y contraseña";
+    } 
+
+    // Mostrar mensajes de error según las condiciones
+    if (!$usuario_correcto && !$mostrar_mensaje_contraseña_incorrecta) {
+        // Mostrar mensaje de usuario y contraseña incorrectos si tanto el usuario como la contraseña son incorrectos
+        $message = "El usuario y la contraseña son incorrectos. Inténtelo de nuevo.";
         echo '<script>showMessage("' . $message . '");</script>';
-    }
+    } elseif (!$mostrar_mensaje_usuario_incorrecto && $mostrar_mensaje_contraseña_incorrecta) {
+        // Mostrar mensaje de contraseña incorrecta si el usuario existe en la base de datos pero la contraseña es incorrecta
+        $message = "La contraseña es incorrecta. Intente de nuevo.";
+        echo '<script>showMessage("' . $message . '");</script>';
+    } 
 }
 ?>
 
@@ -56,7 +77,15 @@ if (!empty($_POST["login"])) {
 
             document.body.appendChild(popup);
 
-            // Centrar el popup
+            // Estilos CSS para el popup
+            popup.style.position = 'fixed';
+            popup.style.zIndex = '9999';
+            popup.style.backgroundColor = 'black';
+            popup.style.color = 'white';
+            popup.style.padding = '10px';
+            popup.style.borderRadius = '5px';
+            popup.style.fontSize = '16px';
+            popup.style.textAlign = 'center';
             popup.style.top = '50%';
             popup.style.left = '50%';
             popup.style.transform = 'translate(-50%, -50%)';
