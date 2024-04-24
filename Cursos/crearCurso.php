@@ -201,20 +201,19 @@
                     <div class="input-field4">
                         <!-- Campos para las preguntas del quiz -->
                         <input type="text" name="pregunta1" placeholder="Pregunta 1" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta1_1" placeholder="Respuesta 1" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
-                        <input type="text" name="respuesta1_2" placeholder="Respuesta 2" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />                        <input type="text" name="respuesta1_2" placeholder="Respuesta 2" required
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta1_3" placeholder="Respuesta 3" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="correcta1" placeholder="Respuesta Correcta" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />                       
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />                       
                     </div>
                 </div>
                 
@@ -223,19 +222,20 @@
                     <div class="input-field4">
                        
                         <input type="text" name="pregunta2" placeholder="Pregunta 2" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
-                        <input type="text" name="respuesta2_1" placeholder="Respuesta 1" requiredpattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
+                        <input type="text" name="respuesta2_1" placeholder="Respuesta 1" required
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta2_2" placeholder="Respuesta 2" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta2_3" placeholder="Respuesta 3" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="correcta2" placeholder="Respuesta Correcta" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                     </div>
                 </div>     
 
@@ -244,20 +244,20 @@
                     <div class="input-field4">
                         
                         <input type="text" name="pregunta3" placeholder="Pregunta 3" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta3_1" placeholder="Respuesta 1" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta3_2" placeholder="Respuesta 2" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta3_3" placeholder="Respuesta 3" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="correcta3" placeholder="Respuesta Correcta" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                     </div>
                 </div>
                 
@@ -266,20 +266,20 @@
                     <div class="input-field4">
              
                         <input type="text" name="pregunta4" placeholder="Pregunta 4" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta4_1" placeholder="Respuesta 1" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta4_2" placeholder="Respuesta 2" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="respuesta4_3" placeholder="Respuesta 3" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                         <input type="text" name="correcta4" placeholder="Respuesta Correcta" required
-                        pattern=".*[a-zA-Z0-9].*"  
-                        title="Por favor, introduce un valor válido. Debe contener al menos una letra o número." />
+                        pattern=".*\S.*"
+                        title="Por favor, introduce al menos un carácter visible, sin espacios vacíos." />
                     </div>
                 </div>     
             </div>
