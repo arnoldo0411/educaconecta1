@@ -34,59 +34,69 @@
         <!--<button class="boton-inicio" onclick="window.location.href='../Index/Index.php'">Inicio</button>-->
         <a href = "../Index/Index.php"><img class="e" src = "../Images/LogoPNG.png"></a>
         <div class="search-button">
-            <a href="#" onclick="buscarCurso()">
-                <img class="search-3-1" alt="Buscar" src="../public/search-3-1.svg" />
-            </a>
-            <input id="searchInput" class="buscar" placeholder="Buscar curso por nombre.." type="text" maxlength="55" oninput="buscarCurso(event)" />
+    <a href="#" onclick="buscarCurso()">
+        <img class="search-3-1" alt="Buscar" src="../public/search-3-1.svg" />
+    </a>
+    <input
+        id="searchInput"
+        class="buscar"
+        placeholder="Buscar curso por nombre..."
+        type="text"
+        maxlength="55"
+        onkeypress="if (event.key === 'Enter') { buscarCurso(); }"
+    />
 
-            <!-- Script para manejar la búsqueda al presionar "Enter" -->
-            <script>
-                function buscarCurso() {
-                    // Obtener el valor ingresado en la barra de búsqueda
-                    var nombreCurso = document.getElementById("searchInput").value.trim();
-                    // Verificar si se ingresó un nombre de curso válido
-                    if (nombreCurso) {
-                        // Realizar una solicitud AJAX para buscar el curso
-                        var xhr = new XMLHttpRequest();
-                        xhr.open('GET', 'buscarCurso.php?nombre=' + encodeURIComponent(nombreCurso), true);
-                        xhr.setRequestHeader('Content-Type', 'application/json');
+    <!-- Script para manejar la búsqueda -->
+    <script>
+        function buscarCurso() {
+            // Obtener el valor ingresado en la barra de búsqueda
+            var nombreCurso = document.getElementById("searchInput").value.trim();
+            
+            if (nombreCurso) {
+                // Realizar una solicitud AJAX para buscar el curso
+                var xhr = new XMLHttpRequest();
+                xhr.open(
+                    "GET",
+                    "buscarCurso.php?nombre=" + encodeURIComponent(nombreCurso),
+                    true
+                );
+                xhr.setRequestHeader("Content-Type", "application/json");
 
-                        xhr.onreadystatechange = function() {
-                            if (xhr.readyState === 4 && xhr.status === 200) {
-                                var cursos = JSON.parse(xhr.responseText);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var cursos = JSON.parse(xhr.responseText);
 
-                                if (cursos.length > 0) {
-                                    // Limpiar el contenedor de cursos antes de mostrar los nuevos resultados
-                                    document.getElementById("curso-container").innerHTML = "";
-                                    
+                        if (cursos.length > 0) {
+                            // Limpiar el contenedor de cursos antes de mostrar los nuevos resultados
+                            document.getElementById("curso-container").innerHTML = "";
 
-                                    // Mostrar los cursos obtenidos en el contenedor
-                                    cursos.forEach(function(curso) {
-                                        var cursoDiv = document.createElement('div');
-                                        cursoDiv.textContent = curso.NombreCurso; // Ajustar al nombre del campo de la base de datos
-                                        cursoDiv.addEventListener('click', function() {
-                                            mostrarContenidoCurso(curso.NombreCurso);
-                                        });
-                                        document.getElementById("curso-container").appendChild(cursoDiv);
-                                    });
-                                } else {
-                                    // Si no se encontraron cursos, mostrar un mensaje y redirigir a curso.php
-                                    document.getElementById("curso-container").innerHTML = "No se encontraron cursos.";
-                                    alert("No se encontraron cursos.");
-                                    // Redirigir después de que el mensaje sea mostrado
-                                    window.location.href = "curso.php"; 
-                                }
-                            }
-                        };
-
-                        xhr.send();
-                    } else {
-                        // Mostrar un mensaje de alerta si no se ingresó un nombre de curso
-                        alert("Por favor ingrese el nombre del curso.");
+                            // Mostrar los cursos obtenidos en el contenedor
+                            cursos.forEach(function (curso) {
+                                var cursoDiv = document.createElement("div");
+                                cursoDiv.textContent = curso.NombreCurso;
+                                cursoDiv.addEventListener("click", function () {
+                                    mostrarContenidoCurso(curso.NombreCurso);
+                                });
+                                document.getElementById("curso-container").appendChild(cursoDiv);
+                            });
+                        } else {
+                            // Si no se encontraron cursos, mostrar un mensaje y redirigir a curso.php
+                            document.getElementById("curso-container").innerHTML = "No se encontraron cursos.";
+                            alert("No se encontraron cursos.");
+                            window.location.href = "curso.php"; 
+                        }
                     }
-                }
-            </script>
-        </div>
+                };
+
+                xhr.send();
+            } else {
+                // Mostrar un mensaje de alerta si no se ingresó un nombre de curso
+                alert("Por favor ingrese el nombre del curso.");
+            }
+        }
+    </script>
+</div>
+
     </div>
 
 
